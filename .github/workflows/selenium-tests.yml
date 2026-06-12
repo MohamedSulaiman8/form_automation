@@ -31,6 +31,8 @@ jobs:
       # ✅ FIX: stable chrome setup
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
 
       - name: Run Selenium Tests
         run: mvn clean test
