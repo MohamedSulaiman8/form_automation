@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-12T17:47:47 IST" name="FormAutomationSuite" finished-at="2026-06-12T17:49:00 IST" duration-ms="73275">
+    <groups>
+    </groups>
+    <test started-at="2026-06-12T17:47:47 IST" name="FormTests" finished-at="2026-06-12T17:49:00 IST" duration-ms="73275">
+      <class name="tests.FormTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.FormTest@1817d444]" started-at="2026-06-12T17:47:47 IST" name="setUp" finished-at="2026-06-12T17:47:58 IST" duration-ms="10620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fillFormDirectMethod(utils.BookingData)[pri:0, instance:tests.FormTest@1817d444]" started-at="2026-06-12T17:47:58 IST" name="fillFormDirectMethod" data-provider="bookingData" finished-at="2026-06-12T17:48:20 IST" duration-ms="22438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[utils.BookingData@29caf222]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillFormDirectMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FormTest@1817d444]" started-at="2026-06-12T17:48:20 IST" name="tearDown" finished-at="2026-06-12T17:48:20 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.FormTest@1817d444]" started-at="2026-06-12T17:48:20 IST" name="setUp" finished-at="2026-06-12T17:48:25 IST" duration-ms="4922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fillFormDirectMethod(utils.BookingData)[pri:0, instance:tests.FormTest@1817d444]" started-at="2026-06-12T17:48:25 IST" name="fillFormDirectMethod" data-provider="bookingData" finished-at="2026-06-12T17:48:34 IST" duration-ms="9396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[utils.BookingData@646811d6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillFormDirectMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FormTest@1817d444]" started-at="2026-06-12T17:48:34 IST" name="tearDown" finished-at="2026-06-12T17:48:35 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.FormTest@1817d444]" started-at="2026-06-12T17:48:35 IST" name="setUp" finished-at="2026-06-12T17:48:39 IST" duration-ms="4071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fillFormUsingCalendar(utils.BookingData)[pri:0, instance:tests.FormTest@1817d444]" started-at="2026-06-12T17:48:39 IST" name="fillFormUsingCalendar" data-provider="bookingData" finished-at="2026-06-12T17:48:48 IST" duration-ms="9134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[utils.BookingData@6ba7383d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillFormUsingCalendar -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FormTest@1817d444]" started-at="2026-06-12T17:48:48 IST" name="tearDown" finished-at="2026-06-12T17:48:48 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.FormTest@1817d444]" started-at="2026-06-12T17:48:48 IST" name="setUp" finished-at="2026-06-12T17:48:52 IST" duration-ms="3998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fillFormUsingCalendar(utils.BookingData)[pri:0, instance:tests.FormTest@1817d444]" started-at="2026-06-12T17:48:52 IST" name="fillFormUsingCalendar" data-provider="bookingData" finished-at="2026-06-12T17:49:00 IST" duration-ms="8130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[utils.BookingData@66236a0a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillFormUsingCalendar -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FormTest@1817d444]" started-at="2026-06-12T17:49:00 IST" name="tearDown" finished-at="2026-06-12T17:49:00 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.FormTest -->
+    </test> <!-- FormTests -->
+  </suite> <!-- FormAutomationSuite -->
+</testng-results>

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="FormAutomationSuite">
+
+    <test name="FormTests">
+
+        <classes>
+            <class name="tests.FormTest"/>
+        </classes>
+
+    </test>
+
+</suite>
