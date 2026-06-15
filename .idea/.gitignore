@@ -1,10 +1,33 @@
-# Default ignored files
+# Maven
+target/
+
+# Allure
+allure-results/
+allure-report/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Existing IntelliJ entries
 /shelf/
 /workspace.xml
-# Editor-based HTTP Client requests
 /httpRequests/
-# Ignored default folder with query files
 /queries/
-# Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
