@@ -2,13 +2,22 @@ name: Selenium Tests
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
   workflow_dispatch:
     inputs:
+      suite:
+        description: "Select test suite"
+        required: true
+        default: smoke
+        type: choice
+        options:
+          - smoke
+          - regression
+
       browser:
         description: "Select browser"
         required: true
@@ -40,6 +49,7 @@ jobs:
     env:
       BROWSER: ${{ github.event.inputs.browser || 'chrome' }}
       ENVIRONMENT: ${{ github.event.inputs.environment || 'qa' }}
+      SUITE: ${{ github.event.inputs.suite || 'smoke' }}
 
     steps:
 
@@ -59,14 +69,12 @@ jobs:
           key: maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: maven
 
-      # Chrome
       - name: Setup Chrome
         if: env.BROWSER == 'chrome'
         uses: browser-actions/setup-chrome@v1
         with:
           chrome-version: stable
 
-      # Firefox
       - name: Setup Firefox
         if: env.BROWSER == 'firefox'
         run: |
@@ -75,13 +83,14 @@ jobs:
 
       - name: Clean Allure results
         run: rm -rf allure-results allure-report
-      
 
+      # 🔥 FIXED: now suite is used
       - name: Run Selenium Tests
         run: |
           mvn clean test \
           -Dbrowser=${BROWSER} \
-          -Denv=${ENVIRONMENT}
+          -Denv=${ENVIRONMENT} \
+          -DsuiteXmlFile=${SUITE}.xml
 
       - name: Upload Surefire Reports
         if: always()
@@ -123,8 +132,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-
       - name: Publish Report Link in Summary
         run: |
-          echo "##  Allure Report" >> $GITHUB_STEP_SUMMARY
-          echo " https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY
+          echo "## Allure Report" >> $GITHUB_STEP_SUMMARY
+          echo "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY
