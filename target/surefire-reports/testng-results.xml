@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-16T13:09:19 IST" name="SmokeSuite" finished-at="2026-06-16T13:09:30 IST" duration-ms="10405">
+    <groups>
+    </groups>
+    <test started-at="2026-06-16T13:09:19 IST" name="SmokeTest" finished-at="2026-06-16T13:09:30 IST" duration-ms="10405">
+      <class name="tests.FormTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.FormTest@1cf6d1be]" started-at="2026-06-16T13:09:19 IST" name="setUp" finished-at="2026-06-16T13:09:25 IST" duration-ms="5645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fillFormDirectMethod_smoke(utils.BookingData)[pri:0, instance:tests.FormTest@1cf6d1be]" started-at="2026-06-16T13:09:25 IST" name="fillFormDirectMethod_smoke" data-provider="smokeData" finished-at="2026-06-16T13:09:30 IST" duration-ms="4488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[utils.BookingData@7b2a3ff8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillFormDirectMethod_smoke -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.FormTest@1cf6d1be]" started-at="2026-06-16T13:09:30 IST" name="tearDown" finished-at="2026-06-16T13:09:30 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.FormTest -->
+    </test> <!-- SmokeTest -->
+  </suite> <!-- SmokeSuite -->
+</testng-results>
